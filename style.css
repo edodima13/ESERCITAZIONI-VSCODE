@@ -3,123 +3,130 @@
     padding: 0;
 }
 
-body{
-    background-color: rgb(225, 233, 233);
-    padding: 0;
-    margin: 0;
+/*CONTAINER SIMILI REGOLE*/
+.container-small{
+    width: 40px;
+    height: 40px;
 }
 
-header{
-    line-height: 70px;
-    background-color: white;
-    margin-bottom: 5px;
+.container-medium{
+    width: 60px;
+    height: 60px;
 }
 
-.header_logo{
-    width: 70px;
-    height: 70px;
-    display: inline-block;
-    vertical-align: middle;
+.container-big{
+    width: 300px;
+    height: 300px;
 }
 
-.titolo{
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0;
+.container-extra-big{
+    width: 900px;
+    height: 600px;
 }
 
-/*MAIN*/
-
-main{
-    margin: 0 auto;
-    width: 60%;
-    border-radius: 5px;
+.absolute{
+    position: absolute;
 }
 
-/*PARTE DEI BUTTON*/
-.container{
-    border-radius: 4px;
-    background-color: white;
+.absolute-middle{
+    left: 33%;
+    margin-left: 4px;
 }
 
-
-.btn_container{
-    padding: 5px 20px;
-    margin-bottom: 2px;
+.relative{
+    position: relative;
 }
 
-.btn{
-    border-radius: 5px;
-    padding: 5px 9px;
-    font-size: 10px;
-    border: 1px solid;
+.red{
+    background-color: red;
 }
 
-.btn_task{
-   background-color: rgb(0, 135, 193); 
-   color: white;
-}
-
-.btn_section{
-    color: lightgray;
-    background-color: white;
-    border-color: lightgray;
-}
-
-/*PARTE DELLE TASK*/
-.mt1{
-    margin-top: 1px;
-    padding: 10px 0;
-}
-
-.task-container{
-    padding-left: 20px;
-    padding-bottom: 5px;
-}
-
-.task-container .check{
-    padding-bottom: 3px;
-}
-
-.check *{
-    vertical-align: middle;
-}
-
-.check p{
-    display: inline-block;
-    font-size: 15px;
-}
-
-.check-container{
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    font-size: 8px;
-    border-radius: 100%;
-    border: 1px solid;
-    padding: 1px 1px;
-    background-color: white;
-}
-
-.check-green{
-    color: green;
-    border-color: green;
-}
-
-.check-red{
-    color: red;
-    border-color: red;
-}
-
-.check-container span{
-    margin-left: 1px;
-}
-
-.btn-category{
-    color: white;
-    display: inline-block;
-    font-size: 8px;
-    padding: 3px 5px;
-    border-radius: 10px;
+.green{
     background-color: green;
 }
+
+.blue{
+    background-color: blue;
+}
+
+/*CONTAINER FISSO A DESTRA*/
+.container-1{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+/*CONTAINER 2*/
+
+.container-2{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.container-2-left{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.container-2-right-bottom{
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+}
+
+/*CONTAINER 3*/
+.es-3{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.container-3-top-left{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.container-3-right-top{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.container-3-right-bottom{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.container-3-right{
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+}
+
+.es-3 .green{
+    right: 50%;
+    bottom: 50%;
+}
+
+/*CONTAINER4*/
+.es-4{
+    font-size: 0;
+}
+
+.es-4 .container-big{
+    display: inline-block;
+}
+
+.es-4 .container-medium:last-child{
+    left: 10px;
+}
+
+
+
